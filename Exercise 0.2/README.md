@@ -1,64 +1,38 @@
-# COS30045 – Data Visualisation  
-## Exercise 0.2 – Energy Website
+# Energy Data Webpage
 
-Welcome to **Exercise 0.2** for COS30045 Data Visualisation.
+COS30045 Data Visualisation — Exercise 0.2
 
-In this exercise, you will build a simple **Energy Data Webpage** using **HTML, CSS, and JavaScript**. The purpose of this exercise is to familiarise you with the development workflow using **GitHub and VS Code**, while preparing the foundation for future data visualisation tasks.
+A simple static website built with HTML, CSS, and JavaScript that loads energy
+data from a CSV file and displays it in a table, along with a short overview
+section.
 
----
+## Project Structure
 
-# Objective
-
-The objectives of this exercise are:
-
-- Understand how to use **GitHub for version control**
-- Practice **web development structure**
-- Build a **basic website**
-- Maintain **regular commits**
-- Identify commits that include **GenAI-generated code**
-
----
-
-# Step 1 – Fork the Repository
-
-1. Open this repository.
-2. Click **Fork** at the top right of the page.
-3. This will create a copy of the repository in your GitHub account.
-
-Example:
-
-Original repository : "github.com/rishmaf/COS30045-Data-Visualization/energy-webpage"
-
-Your forked repository : "github.com/yourusername/COS30045-Data-Visualization/energy-webpage"
-
-
----
-
-# Step 2 – Clone the Repository
-
-Clone your forked repository to your local machine using **VS Code** or the terminal.
-
-
-
-# Step 3 – Project Structure
-
-
-Your project must follow the structure below.
-
-```bash
-energy-webpage-v1
+Exercise 0.2
 │
-├── css
-│   └── styles.css
-│
-├── js
-│   └── scripts.js
-│
-├── images
-│   └── PowerIcon.png
-│
-├── data
-│   └── data.csv
-│
+├── css/
+│ └── styles.css
+├── data/
+│ └── data.csv
+├── images/
+│ └── PowerIcon.png
+├── js/
+│ └── scripts.js
 ├── index.html
 └── README.md
+
+
+## How to Run
+
+This project uses `fetch()` to load `data.csv`, so it must be run through a
+local server rather than opened directly as a file.
+
+1. Open this folder in VS Code
+2. Install the **Live Server** extension
+3. Right-click `index.html` → "Open with Live Server"
+
+## Data Source
+
+`data.csv` contains sample renewable energy data (illustrative, not verified
+real-world statistics) used to demonstrate loading and displaying data with
+JavaScript.
