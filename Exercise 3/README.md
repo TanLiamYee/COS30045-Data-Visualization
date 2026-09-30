@@ -1,104 +1,69 @@
-# Exercise 3 – Data Story: TV Energy Consumption
+# TV Energy Consumption Data Story
 
-## Overview
+COS30045 Data Visualisation — Exercise 3
 
-In this exercise, you will develop a **data story** based on the **TV Energy Consumption dataset**. Using the website created in **Exercise 0.2**, you will extend your work to present a meaningful narrative supported by data visualisations.
-
-Your goal is to communicate insights from the dataset in a clear and engaging way through your **website and written explanation**.
-
-You must use the **Exercise 3 folder in your existing forked repository** and reuse the files created in **Exercise 0.2**.
-
----
+This project presents a short data story about TV energy consumption.
+The website is designed for customers who are planning to buy a new TV and want to understand how different TV features may affect energy use.
 
 ## Data Story
 
 ### Audience
 
-The target audience for this visualisation includes:
+The target audience is customers who are considering purchasing a new television.
 
-- Consumers interested in **energy-efficient televisions**
-- Policy makers and regulators interested in **energy consumption trends**
-- Researchers studying **energy efficiency in consumer electronics**
+They may want to compare different TV models and understand whether features such as screen size and energy rating affect energy consumption.
 
-These audiences are interested in understanding how **television energy consumption varies across models, sizes, and technologies**, and how these factors influence overall energy usage.
+### Audience Interest
 
-### Story Overview
+The main goal of the visualisation is to help customers understand the relationship between TV characteristics and energy consumption.
 
-This visualisation explores patterns in **TV energy consumption** across different television models and specifications.
+The story focuses on:
 
-The goal is to help viewers understand:
-
-- How energy consumption varies between television models
-- The relationship between **screen size and power consumption**
-- How **energy efficiency ratings** impact energy usage
-- Trends that may help consumers choose more **energy-efficient televisions**
-
-The website presents these insights through visualisations and explanatory text that guide the viewer through the data.
-
----
+- differences in energy consumption between TV models
+- the relationship between screen size and energy consumption
+- differences between screen technologies
+- helping customers make a more informed TV choice
 
 ## About the Data
 
 ### Data Source
 
-The dataset used in this project contains information about **television models and their energy consumption characteristics**, including power usage, screen size, technology type, and efficiency ratings.
+The dataset contains information about television models and their energy-related characteristics.
 
-The dataset was provided as part of the course materials.
+The data was provided as part of the COS30045 Data Visualisation exercise.
 
 ### Data Processing
 
-Before creating visualisations, the dataset was processed to ensure it was suitable for analysis. This included:
+The dataset was processed using KNIME Analytics Platform.
 
-- Cleaning missing or inconsistent values
-- Selecting relevant attributes for visualisation
-- Organising the data into formats suitable for web visualisation
+The data was cleaned and filtered before creating the visualisations. Different columns were selected depending on the question being analysed.
+
+The visualisations used in the website include bar charts and a scatter plot.
 
 ### Privacy
 
-The dataset does not contain any **personal or sensitive information**. It focuses solely on product specifications and energy consumption data related to television devices.
+The dataset does not contain personal information about individuals.
+
+It contains product-related information about televisions, so there are no major privacy concerns when using the data for this exercise.
 
 ### Accuracy and Limitations
 
-While the dataset provides useful information about TV energy consumption, there are some limitations:
+The visualisations are based only on the data available in the provided dataset.
 
-- The dataset may not include **all available television models**
-- Some information may be **outdated or incomplete**
-- Energy consumption may vary depending on **real-world usage conditions**
+The results may not represent every television currently available on the market.
 
-These factors should be considered when interpreting the visualisations.
+Energy consumption may also be affected by other factors such as TV technology, brightness settings, usage time and manufacturer specifications.
+
+Therefore, the visualisations should be used as a general comparison rather than an exact prediction of electricity usage.
 
 ### Ethics
 
-When presenting data visualisations, it is important to ensure that the information is represented **accurately and responsibly**.
+The visualisations were created to present the data clearly and avoid misleading the reader.
 
-This project follows ethical data visualisation practices by:
-
-- Avoiding misleading visual representations
-- Clearly explaining the context of the data
-- Presenting information transparently so viewers can interpret the results correctly
-
----
+Charts were selected based on the type of data being compared, and the results are presented without intentionally hiding or changing important information.
 
 ## AI Declaration
 
-Artificial Intelligence (AI) tools may have been used to assist with aspects of this assignment, such as:
+Generative AI tools were used to assist with planning, writing and improving parts of the website and documentation.
 
-- Generating example code
-- Improving code structure
-- Assisting with documentation writing
-
-All AI-generated assistance was reviewed, modified where necessary, and integrated responsibly into the project.
-
----
-
-## Website Storytelling
-
-The website has been updated to communicate a **data-driven story** based on the TV energy consumption dataset.
-
-The website includes:
-
-- Visualisations that present key insights from the dataset
-- Text explanations that help readers understand the meaning of the visualisations
-- Context that connects the data to real-world implications
-
-The aim is to guide the viewer through the data in a way that is **informative, engaging, and easy to understand**.
+The final work was reviewed and edited by the student, and the student is responsible for understanding and verifying the submitted content.
