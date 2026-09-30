@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Data</title>
+  <link rel="icon" href="images/PowerIcon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+    <div class="brand">
+      <img src="images/PowerIcon.png" alt="Power icon" width="32">
+      <span>Energy Data</span>
+    </div>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#data">Data</a>
+    </nav>
+  </header>
+
+    <main>
+
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>This page loads a small energy dataset and displays it below.</p>
+    </section>
+
+    <section id="data">
+      <h2>Dataset</h2>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Year</th>
+            <th>Renewable Share (%)</th>
+            <th>Consumption (TWh)</th>
+          </tr>
+        </thead>
+        <tbody id="dataTableBody">
+          <tr><td colspan="4">Loading data...</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
