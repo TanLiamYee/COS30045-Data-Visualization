@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TV Energy Consumption</title>
+
+  <link rel="icon" href="images/PowerIcon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/PowerIcon.png" alt="Power icon" width="32">
+      <span>TV Energy Consumption</span>
+    </div>
+
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#models">TV Models</a>
+      <a href="#screen-size">Screen Size</a>
+      <a href="#screen-tech">Screen Tech</a>
+      <a href="#conclusion">Conclusion</a>
+      <a href="#svg-house">SVG Shapes</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Introduction -->
+    <section id="overview">
+      <h2>TV Energy Consumption</h2>
+
+      <p>
+        Choosing a new TV involves more than comparing price and screen size.
+        Different televisions can also use different amounts of energy.
+      </p>
+
+      <p>
+        This data story explores TV energy consumption by comparing different
+        TV models, screen sizes and screen technologies. The aim is to help customers
+        understand these differences and make a more informed choice when buying a TV.
+      </p>
+    </section>
+
+
+    <!-- TV Models -->
+    <section id="models">
+      <h2>TV Models</h2>
+
+      <img
+        src="images/tv-models.png"
+        alt="Bar chart comparing energy consumption across TV models"
+        class="chart"
+      >
+
+      <p>
+        Energy consumption can vary between different TV models.
+        Some models use noticeably more energy than others, which means the
+        choice of TV model can affect long-term electricity usage.
+      </p>
+    </section>
+
+
+    <!-- Screen Size -->
+    <section id="screen-size">
+      <h2>Screen Size</h2>
+
+      <img
+        src="images/screen-size.png"
+        alt="Scatter plot showing screen size and energy consumption"
+        class="chart"
+      >
+
+      <p>
+        The visualisation shows the relationship between screen size and
+        energy consumption. Larger TVs generally tend to consume more energy,
+        although screen size is not the only factor that affects energy use.
+      </p>
+    </section>
+
+
+    <!-- Energy Rating -->
+    <section id="screen-tech">
+      <h2>Screen Technology</h2>
+
+      <img
+        src="images/screen-tech.png"
+        alt="Bar chart comparing energy consumption by screen technology"
+        class="chart"
+      >
+
+      <p>
+        Different screen technologies can also have different levels of energy consumption.
+        The chart compares the energy use of TVs using technologies such as LCD, LED and OLED.
+        This shows that screen technology is another factor customers can consider when comparing TVs.
+      </p>
+    </section>
+
+
+    <!-- Conclusion -->
+    <section id="conclusion">
+      <h2>Conclusion</h2>
+
+      <p>
+        The visualisations show that TV energy consumption can vary depending
+        on the model, screen size and screen technologies.
+      </p>
+
+      <p>
+        Customers should consider energy consumption together with other
+        features when choosing a television. Comparing these factors can help
+        them choose a TV that suits their needs while also reducing energy use.
+      </p>
+    </section>
+
+        <!-- Exercise 4.1 -->
+    <section id="svg-house">
+      <h2>Exercise 4.1 - SVG House and Garden</h2>
+      <h3>Step 1 - SVG Shapes</h3>
+
+      <svg width="800" height="500">
+
+        <!-- Sky -->
+        <rect x="0" y="0" width="800" height="500" fill="lightblue"/>
+
+        <!-- Grass -->
+        <rect x="0" y="350" width="800" height="150" fill="lightgreen"/>
+
+        <!-- Sun -->
+        <circle cx="680" cy="80" r="40"
+                fill="yellow" stroke="orange" stroke-width="3"/>
+
+        <!-- House -->
+        <rect x="250" y="200" width="300" height="200"
+              fill="burlywood" stroke="black" stroke-width="3"/>
+
+        <!-- Roof -->
+        <polygon points="220,200 400,80 580,200"
+                 fill="brown" stroke="black" stroke-width="3"/>
+
+        <!-- Chimney -->
+        <rect x="470" y="110" width="40" height="70"
+              fill="brown" stroke="black" stroke-width="3"/>
+
+        <!-- Door -->
+        <rect x="365" y="300" width="70" height="100"
+              fill="saddlebrown" stroke="black" stroke-width="3"/>
+
+        <!-- Door handle -->
+        <circle cx="420" cy="350" r="5" fill="black"/>
+
+        <!-- Two windows -->
+        <g fill="lightcyan" stroke="black" stroke-width="3">
+
+          <rect x="0" y="0" width="65" height="60"
+                transform="translate(280,240)"/>
+
+          <rect x="0" y="0" width="65" height="60"
+                transform="translate(455,240)"/>
+
+        </g>
+
+        <!-- Tree -->
+        <rect x="100" y="280" width="35" height="100"
+              fill="saddlebrown"/>
+
+        <ellipse cx="118" cy="250" rx="70" ry="65"
+                 fill="green" stroke="darkgreen" stroke-width="3"/>
+
+        <!-- Fence -->
+        <polyline points="20,410 70,380 120,410 170,380 220,410"
+                  fill="none" stroke="brown" stroke-width="5"/>
+
+        <!-- Line -->
+        <line x1="590" y1="300" x2="750" y2="300"
+              stroke="black" stroke-width="3"/>
+
+        <!-- Path -->
+        <path d="M365 400 L320 500 L480 500 L435 400 Z"
+              fill="tan" stroke="black" stroke-width="2"/>
+
+        <!-- Text -->
+        <text x="600" y="290" font-size="22" fill="darkgreen">
+          House
+        </text>
+
+      </svg>
+
+      <!-- Step 2: SVG Coordinate System -->
+      <h3>Step 2 - SVG Coordinate System</h3>
+
+      <p>
+        The annotated image below shows how the coordinates used in the
+        SVG code match the positions of the different shapes in the drawing.
+      </p>
+
+      <img
+        src="images/Step_2.png"
+        alt="Annotated SVG house showing the coordinate system"
+        class="chart"
+      >
+
+          <!-- Step 3: Customised SVG -->
+      <h3>Step 3 - Customised SVG Shapes</h3>
+
+      <p>
+        The SVG house was customised by changing colours and strokes,
+        and by adding extra objects to the garden.
+      </p>
+
+      <svg width="800" height="500">
+
+        <!-- Sky -->
+        <rect x="0" y="0" width="800" height="500" fill="skyblue"/>
+
+        <!-- Grass -->
+        <rect x="0" y="350" width="800" height="150" fill="lightgreen"/>
+
+        <!-- Sun -->
+        <circle cx="680" cy="80" r="45"
+                fill="gold" stroke="orange" stroke-width="5"/>
+
+        <!-- House - changed colour and stroke -->
+        <rect x="250" y="200" width="300" height="200"
+              fill="lightyellow" stroke="darkred" stroke-width="4"/>
+
+        <!-- Roof - changed colour and stroke -->
+        <polygon points="220,200 400,80 580,200"
+                 fill="darkred" stroke="black" stroke-width="4"/>
+
+        <!-- Chimney -->
+        <rect x="470" y="110" width="40" height="70"
+              fill="darkred" stroke="black" stroke-width="3"/>
+
+        <!-- Smoke - new objects -->
+        <circle cx="500" cy="85" r="12" fill="lightgray"/>
+        <circle cx="515" cy="65" r="16" fill="lightgray"/>
+        <circle cx="535" cy="40" r="20" fill="lightgray"/>
+
+        <!-- Door -->
+        <rect x="365" y="300" width="70" height="100"
+              fill="saddlebrown" stroke="black" stroke-width="3"/>
+
+        <!-- Door Handle -->
+        <circle cx="420" cy="350" r="5" fill="gold"/>
+
+        <!-- Windows -->
+        <rect x="280" y="240" width="65" height="60"
+              fill="lightblue" stroke="darkblue" stroke-width="3"/>
+
+        <rect x="455" y="240" width="65" height="60"
+              fill="lightblue" stroke="darkblue" stroke-width="3"/>
+
+        <!-- Tree -->
+        <rect x="100" y="280" width="35" height="100"
+              fill="saddlebrown"/>
+
+        <ellipse cx="118" cy="250" rx="70" ry="65"
+                 fill="darkgreen" stroke="green" stroke-width="4"/>
+
+        <!-- Fence -->
+        <polyline points="20,410 70,380 120,410 170,380 220,410"
+                  fill="none" stroke="saddlebrown" stroke-width="6"/>
+
+        <!-- Garden Path -->
+        <path d="M365 400 L320 500 L480 500 L435 400 Z"
+              fill="wheat" stroke="brown" stroke-width="3"/>
+
+        <!-- Flowers - new objects -->
+        <circle cx="170" cy="365" r="8" fill="red"/>
+        <circle cx="195" cy="375" r="8" fill="purple"/>
+        <circle cx="220" cy="365" r="8" fill="orange"/>
+
+        <!-- Flower stems -->
+        <line x1="170" y1="373" x2="170" y2="400"
+              stroke="green" stroke-width="3"/>
+
+        <line x1="195" y1="383" x2="195" y2="410"
+              stroke="green" stroke-width="3"/>
+
+        <line x1="220" y1="373" x2="220" y2="400"
+              stroke="green" stroke-width="3"/>
+
+        <!-- Text -->
+        <text x="585" y="290" font-size="22" fill="darkgreen">
+          House
+        </text>
+
+      </svg>
+       
+      <h3>Step 4 - Grouping SVG Elements</h3>
+
+      <p>
+        The two windows are placed inside a group so they share the same
+        styling. Transform and translate are used to position each window.
+      </p>
+
+      <svg width="800" height="500">
+
+        <!-- Sky -->
+        <rect x="0" y="0" width="800" height="500" fill="skyblue"/>
+
+        <!-- Grass -->
+        <rect x="0" y="350" width="800" height="150" fill="lightgreen"/>
+
+        <!-- Sun -->
+        <circle cx="680" cy="80" r="45"
+                fill="gold" stroke="orange" stroke-width="5"/>
+
+        <!-- House - changed colour and stroke -->
+        <rect x="250" y="200" width="300" height="200"
+              fill="lightyellow" stroke="darkred" stroke-width="4"/>
+
+        <!-- Roof - changed colour and stroke -->
+        <polygon points="220,200 400,80 580,200"
+                 fill="darkred" stroke="black" stroke-width="4"/>
+
+        <!-- Chimney -->
+        <rect x="470" y="110" width="40" height="70"
+              fill="darkred" stroke="black" stroke-width="3"/>
+
+        <!-- Smoke - new objects -->
+        <circle cx="500" cy="85" r="12" fill="lightgray"/>
+        <circle cx="515" cy="65" r="16" fill="lightgray"/>
+        <circle cx="535" cy="40" r="20" fill="lightgray"/>
+
+        <!-- Door -->
+        <rect x="365" y="300" width="70" height="100"
+              fill="saddlebrown" stroke="black" stroke-width="3"/>
+
+        <!-- Door Handle -->
+        <circle cx="420" cy="350" r="5" fill="gold"/>
+
+        <!-- Windows grouped with shared styling -->
+        <g fill="lightblue" stroke="darkblue" stroke-width="3">
+
+        <rect x="0" y="0" width="65" height="60"
+          transform="translate(280,240)"/>
+
+        <rect x="0" y="0" width="65" height="60"
+          transform="translate(455,240)"/>
+        </g>
+
+        <!-- Tree -->
+        <rect x="100" y="280" width="35" height="100"
+              fill="saddlebrown"/>
+
+        <ellipse cx="118" cy="250" rx="70" ry="65"
+                 fill="darkgreen" stroke="green" stroke-width="4"/>
+
+        <!-- Fence -->
+        <polyline points="20,410 70,380 120,410 170,380 220,410"
+                  fill="none" stroke="saddlebrown" stroke-width="6"/>
+
+        <!-- Garden Path -->
+        <path d="M365 400 L320 500 L480 500 L435 400 Z"
+              fill="wheat" stroke="brown" stroke-width="3"/>
+
+        <!-- Flowers - new objects -->
+        <circle cx="170" cy="365" r="8" fill="red"/>
+        <circle cx="195" cy="375" r="8" fill="purple"/>
+        <circle cx="220" cy="365" r="8" fill="orange"/>
+
+        <!-- Flower stems -->
+        <line x1="170" y1="373" x2="170" y2="400"
+              stroke="green" stroke-width="3"/>
+
+        <line x1="195" y1="383" x2="195" y2="410"
+              stroke="green" stroke-width="3"/>
+
+        <line x1="220" y1="373" x2="220" y2="400"
+              stroke="green" stroke-width="3"/>
+
+        <!-- Text -->
+        <text x="585" y="290" font-size="22" fill="darkgreen">
+          House
+        </text>
+
+      </svg>
+
+    </section>
+  </main>
+
+</body>
+</html>
