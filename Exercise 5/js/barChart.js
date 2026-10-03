@@ -1,6 +1,6 @@
 // Exercise 5.1 - Vertical Bar Chart
 
-d3.csv("data/screenTechEnergy.csv", d => {
+d3.csv("data/Data_exercise_5.1.csv", d => {
     return {
         Screen_Tech: d.Screen_Tech,
         Energy_Consumption: +d["Mean(Labelled energy consumption (kWh/year))"]
