@@ -14,6 +14,7 @@ d3.csv("data/Ex6_TVdata_withStar.csv", d => ({
     // Call functions after data is loaded
     drawHistogram(data);
     populateFilters(data);
+    drawScatterplot(data);
 
 }).catch(error => {
     console.error("Error loading the CSV file:", error);
