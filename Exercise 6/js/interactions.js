@@ -57,3 +57,72 @@ const populateFilters = (data) => {
         .attr("stroke", bodyBackgroundColor);
     };
 };
+
+const createTooltip = () => {
+
+    // Append tooltip to scatterplot inner chart
+    const tooltip = innerChartS
+        .append("g")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    // Append tooltip background rectangle
+    tooltip
+        .append("rect")
+        .attr("width", tooltipWidth)
+        .attr("height", tooltipHeight)
+        .attr("rx", 3)
+        .attr("ry", 3)
+        .attr("fill", barColor)
+        .attr("fill-opacity", 0.75);
+
+    // Append tooltip text
+    tooltip
+        .append("text")
+        .text("NA")
+        .attr("x", tooltipWidth / 2)
+        .attr("y", tooltipHeight / 2 + 2)
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "middle")
+        .attr("fill", "white")
+        .style("font-weight", 900);
+
+};
+
+const handleMouseEvents = () => {
+
+    // Select all circles in the scatterplot
+    innerChartS.selectAll("circle")
+        .on("mouseenter", (e, d) => {
+
+        // Update tooltip text with screen size
+        d3.select(".tooltip text")
+            .text(`${d.screenSize}"`);
+
+        // Get position of selected circle
+        const cx = +e.target.getAttribute("cx");
+        const cy = +e.target.getAttribute("cy");
+
+        // Position and show tooltip
+        d3.select(".tooltip")
+            .attr(
+                "transform",
+                `translate(${cx - tooltipWidth / 2}, ${cy - tooltipHeight - 5})`
+            )
+            .transition()
+            .duration(200)
+            .style("opacity", 1);
+        })
+
+        .on("mouseleave", () => {
+
+        // Hide tooltip when mouse leaves the circle
+        d3.select(".tooltip")
+            .transition()
+            .duration(200)
+            .style("opacity", 0)
+            .attr("transform", "translate(0, 0)");
+
+        });
+
+};
