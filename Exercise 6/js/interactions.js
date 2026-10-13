@@ -32,29 +32,51 @@ const populateFilters = (data) => {
     // Update histogram based on selected screen type
     const updateHistogram = id => {
 
-    // If "all" is selected, use all data.
-    // Otherwise filter by screen technology.
-    const updatedData = id === "all"
-        ? data
-        : data.filter(d => d.screenTech === id);
+        // Filter data based on screen technology
+        const updatedData = id === "all"
+            ? data
+            : data.filter(d => d.screenTech === id);
 
-    // Create new bins using filtered data
-    const updatedBins = binGenerator(updatedData);
+        // Create new bins using filtered data
+        const updatedBins = binGenerator(updatedData);
 
-    // Update histogram bars
-    d3.select("#histogram")
-    .selectAll("rect")
-        .data(updatedBins)
-        .join("rect")
-        .transition()
-        .duration(750)
-        .ease(d3.easeCubicOut)
-        .attr("x", d => xScale(d.x0))
-        .attr("y", d => yScale(d.length))
-        .attr("width", d => xScale(d.x1) - xScale(d.x0))
-        .attr("height", d => innerHeight - yScale(d.length))
-        .attr("fill", barColor)
-        .attr("stroke", bodyBackgroundColor);
+        // Find maximum frequency for the filtered data
+        const updatedMax = d3.max(updatedBins, d => d.length) || 1;
+
+        // Update Y-axis scale
+        yScale
+            .domain([0, updatedMax])
+            .nice();
+
+        // Update histogram bars
+        d3.select("#histogram")
+            .selectAll("rect")
+            .data(updatedBins)
+            .join("rect")
+            .transition()
+            .duration(750)
+            .ease(d3.easeCubicOut)
+            .attr("x", d => xScale(d.x0))
+            .attr("y", d => yScale(d.length))
+            .attr("width", d => xScale(d.x1) - xScale(d.x0))
+            .attr("height", d => innerHeight - yScale(d.length))
+            .attr("fill", barColor)
+            .attr("stroke", bodyBackgroundColor);
+
+        // Update Y-axis to match the new scale
+        d3.select("#histogram")
+            .select(".y-axis")
+            .transition()
+            .duration(750)
+            .call(d3.axisLeft(yScale));
+
+        // Update X-axis
+        d3.select("#histogram")
+            .select(".x-axis")
+            .transition()
+            .duration(750)
+            .call(d3.axisBottom(xScale));
+
     };
 };
 

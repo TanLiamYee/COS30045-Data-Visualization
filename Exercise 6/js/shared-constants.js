@@ -35,7 +35,8 @@ const colorScale = d3.scaleOrdinal();
 // Bin generator
 const binGenerator = d3.bin()
   .value(d => d.energyConsumption)
-  .thresholds(14);
+  .domain([0, 2800])
+  .thresholds(d3.range(200, 2800, 200));
 
 // Array of filter options for screen types
 const filters_screen = [

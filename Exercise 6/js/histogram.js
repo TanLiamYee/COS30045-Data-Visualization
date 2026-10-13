@@ -53,12 +53,14 @@ const drawHistogram = data => {
     // Add x-axis
     innerChart
         .append("g")
+        .attr("class", "x-axis")
         .attr("transform", `translate(0, ${innerHeight})`)
         .call(bottomAxis);
 
     // Add y-axis
     innerChart
         .append("g")
+        .attr("class", "y-axis")
         .call(leftAxis);
 
     // Add x-axis label
